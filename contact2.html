@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="contact2.css">
+
+	<link rel="stylesheet" href="index.css" />
+	<title>Hr-Contact</title>
+</head>
+<style>
+header>p {
+  text-decoration: underline ;
+}
+* {
+  box-sizing: border-box;
+}
+
+/* Create two equal columns that floats next to each other */
+.columncontact {
+  float: left;
+  width: 50%;
+  padding: 10px;
+  height: 700px;
+}
+
+/* Clear floats after the columns */
+.rowcontact:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+</style>
+
+	<!--header-->
+	<header>
+	
+
+  	<a href="homepage.html">
+    <img src="pblogo1.png" width= 200px height= 200px align="right">
+    </a>
+  
+  <h1>Politeknik Brunei</h1>
+  <p>HUMAN RESOURCE DEPARTMENT</p>
+  
+
+</header>
+<!--navigation-->
+<nav>
+  	<a href="homepage.html">Home</a>
+ 	<a href="service.html">Service</a>
+  <a href="staffs.html">Staff</a>
+ 	<a href="contact2.html">Contact</a>
+</nav>
+<!--body-->
+<body>
+	<div class="contact-title">
+		<h2>Contact Form<h2>
+	</div>
+	
+<div class="main">
+<div class="rowcontact">
+  <div class="columncontact" >
+    <p><iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d7805.486815866921!2d114.933031!3d4.904802000000001!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xb7537ecd6404fef7!2sPoliteknik%20Brunei%20(Main%20Campus)!5e1!3m2!1sen!2sbn!4v1588992394399!5m2!1sen!2sbn" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe></p>
+    <p>Human Resource Department<br>
+		Politeknik Brunei<br>
+		Block 2E Level 11<br>
+		Ong Sum Ping Condominium<br>
+		Jalan Ong Sum Ping<br>
+		Bandar Seri Begawan BA1311<br>
+		Negara Brunei Darussalam<br><br>
+		Office: +6732234466</p>
+  </div>
+  <div class="columncontact" style="background-color:#bbb;">
+  	<p>If you would like to request information, please fill the form below.</p>
+    <form id="contact-form" method="post" action="">
+			<label>Name:</label><br>
+			<input name="name" type="text" class="form-control" placeholder="Your name" required><br>
+			<label>E-mail:</label><br>
+			<input name="email" type="email" class="form-control" placeholder="example@email.com" required><br>
+			<label>Message:(MAX of 150 words)</label><br>
+			<textarea name="message" class="form-control" placeholder="Write a message..." row="4" pattern="[A-Za-z]{150}"required></textarea><br>
+
+			<label for="option">Please choose one:</label>
+			
+			<select id="option">
+  			<option value="Student">Student</option>
+ 			 <option value="Non-Student">Non-Student</option>
+  			<option value="Citizen">Citizen</option>
+  			<option value="foreigner">foreigner</option>
+			</select><br>
+			<button type="submit" class="form-control submit" onclick="alert('Form sent')" value="Submit">Submit</button>
+		</form>
+		<div class="grid-container">
+  			<div class="item1">Or Visit:</div>
+			<div class="item2"><a href="http://www.pb.edu.bn/SitePages/home.aspx">Politeknik Brunei</a></div>
+		</div>
+  </div>
+</div>
+</div>
+</body>
+
+<!--footer-->
+<footer>
+	<div class="footer-content">
+    <div class="footer-section left">
+      <h2>HOTLINE</h2>
+       <p><br>AMBULANCE: 991<br>POLICE:993<br>FIRE & RESCUE<br>SEARCH & RESCUE: 998 <br> TALIAN DARUSSALAM: 123</p>
+
+    </div>
+    <div class="footer-section middle">
+        <h2>OUR SCHOOL</h2>
+      <ul>
+        <li>SCHOOL OF BUSINESS</li>
+        <li>SCHOOL OF HEALTH SCIENCE</li>
+        <li>SCHOOL OF INFORMATION AND COMMUNICATION TECHNOLOGY</li>
+        <li>SCHOOL OF SCIENCE AND 
+        ENGINEERING</li>
+      </ul>
+    </div>
+    <div class="footer-sectionright">
+      <a href="http://www.pb.edu.bn/Lists/News/NewDisplayForm.aspx?ID=45"> <img src="unnamed (1).jpg" ></a>
+    </div>
+  </div>
+   
+   <div class="footer-bottom">
+     &copy; 2020 Politeknik Brunei | All Rights Reserved
+   </div>
+</footer>
+</html>
+
+
+
+
+
+
+
+
+
+
+ 
+

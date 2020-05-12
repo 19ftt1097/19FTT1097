@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><link rel="stylesheet" href="index.css" />
+<title>HR-Homepage</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<style>
+header>p {
+  text-decoration: underline ;
+}
+div + div{
+  background-color: none;
+}
+.side{
+  text-align: center;
+  left: 100px;
+  background-color: #D2DBEA;
+  animation-name: intro;
+  animation-duration: 4s;
+}
+
+@keyframes intro {
+  from {background-color: #D2DBEA;}
+  to {background-color: #333697;}
+}
+/* slider */
+
+#slider {
+  margin: 0 auto;
+  width: 1400px;
+  max-width: 100%;
+  text-align: center;
+  padding: 30px;
+}
+
+#slider input[type=radio]{
+  display: none;
+}
+
+#slider label{
+  cursor: pointer;
+  text-decoration: none; 
+}
+
+#slides{
+  padding: 10px;
+  border: 3px solid #ccc;
+  background: #fff;
+  position: relative; 
+  z-index: 1;
+}
+
+#overflow{
+  width: 100%;
+  overflow: hidden;
+}
+
+#slide1:checked ~ #slides .inner {
+  margin-left: 0;
+}
+#slide2:checked ~ #slides .inner {
+  margin-left: -100%;
+}
+#slide3:checked ~ #slides .inner {
+  margin-left: -200%;
+}
+#slide4:checked ~ #slides .inner {
+  margin-left: -300%;
+}
+
+#slides .inner {
+  transition: margin-left 800ms cubic-bezier(0.770, 0.000,
+    0.175, 1.000);
+  width: 400%;
+  line-height: 0;
+  height: 200px;
+
+}
+#slides .slide {
+  width: 25%;
+  float: left;
+  display: block;
+  height: 100%;
+  color: #fff;
+}
+
+#slides .slide_1{
+  background: #00171F;
+}
+#slides .slide_2{
+  background: #003459;
+}
+#slides .slide_3{
+  background: #00171F;
+}
+#slides .slide_4{
+  background: #003459;
+}
+
+.slide-content {
+  padding: 10px;
+}
+#controls{
+  margin: -130px 0 0 0;
+  width: 100%;
+  height: 50px;
+  z-index: 3;
+  position: relative;
+}
+
+#controls label {
+  transition: opacity 0.2s ease-out;
+  display: none;
+  width: 50px;
+  height: 50px;
+  opacity: .4;
+}
+
+#controls label:hover {
+  opacity: 1;
+}
+
+
+#slide1:checked ~ #controls label:nth-child(2),
+#slide2:checked ~ #controls label:nth-child(3),
+#slide3:checked ~ #controls label:nth-child(4),
+#slide4:checked ~ #controls label:nth-child(1){
+  background: 
+  url(https://image.flaticon.com/icons/svg/130/130884.svg) no-repeat;
+  float: right;
+  margin: 0 -50px 0 0;
+  display: block;
+}
+#slide1:checked ~ #controls label:nth-last-child(2),
+#slide2:checked ~ #controls label:nth-last-child(3),
+#slide3:checked ~ #controls label:nth-last-child(4),
+#slide4:checked ~ #controls label:nth-last-child(1){
+  background: 
+  url(https://image.flaticon.com/icons/svg/130/130882.svg) no-repeat;
+  float: left;
+  margin: 0 0 0 -50px;
+  display: block;
+}
+#bullets {
+  margin: 100px 0 0;
+  text-align: center;
+}
+#bullets label {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  border-radius: 100%;
+  background: #ccc;
+  margin: 0 10px;
+}
+#slide1:checked ~ #bullets label:nth-child(1),
+#slide2:checked ~ #bullets label:nth-child(2),
+#slide3:checked ~ #bullets label:nth-child(3),
+#slide4:checked ~ #bullets label:nth-child(4){
+  background: #333;
+}
+</style>
+<body>
+  <!--header-->
+<header>
+
+
+  	<a href="homepage.html">
+    <img src="pblogo1.png" width= 200px height= 200px align="right">
+    </a>
+  <h1>Politeknik Brunei</h1>
+  <p>HUMAN RESOURCE DEPARTMENT</p>
+  
+
+</header>
+<!--navigation-->
+<nav>
+
+  <a href="homepage.html">Home</a>
+  <a href="service.html">Service</a>
+  <a href="staffs.html">Staff</a>
+  <a href="contact2.html">Contact</a>
+<!--body-->
+</nav>
+<div class="row">
+	<div class="side">
+		<div class="main">
+			
+   <img src="banner4.jpg" width=1200px height=263px>
+    
+  
+   
+   
+  
+    <h3>Introduction</h3>
+    <p>	The Human Resource Department of Politeknik Brunei manages people with the 
+	right resources. The main aim of the Human Resource Department is to 
+	effectively and systematically manage human resource development in 
+	facilitating quality education. Politeknik Brunei has a population of 116 
+	officers and staffs, which comprises of 56 administration staffs and 60 
+	lecturers. Politeknik Brunei regards each officer and staff as a valuable 
+	asset towards achieving its vision and mission as well as its five years 
+	strategic plans.</p>
+    <br>
+
+   </div> 
+		</div>
+	</div>
+</div>
+  <div id="slider">
+    <input type="radio" name="slider" id="slide1" checked="">
+    <input type="radio" name="slider" id="slide2" >
+    <input type="radio" name="slider" id="slide3" >
+    <input type="radio" name="slider" id="slide4" >
+    <div id="slides">
+      <div id="overflow">
+        <div class="inner">
+          <div class="slide slide_1">
+            <div class="slide-content">
+              <h2>When?</h2><br><br>
+              <p>Began its operation in January 2012, with the enrolment of its first intake</p>
+            </div>
+          </div>
+           <div class="slide slide_2">
+            <div class="slide-content">
+              <h2>Mission</h2><br><br>
+              <p>To equip students with sustainable skills through holistic and quality education in a supportive teaching and learning environment</p>
+            </div>
+          </div>
+           <div class="slide slide_3">
+            <div class="slide-content">
+              <h2>Vision</h2><br><br>
+              <p>To be a reputable polytechnic producing innovative, skillful and marketable graduates</p>
+            </div>
+          </div>
+           <div class="slide slide_4">
+            <div class="slide-content">
+              <h2>PETIKAN TITAH</h2><br><br>
+              <p>“… Beta juga memperkenankan bagi sebuah politeknik Brunei ditubuhkan…"</p><br>
+              <P>Titah Kebawah Duli Yang Maha Mulia Paduka Seri Baginda Sultan </p><p>dan Yang DiPertuan Negara Brunei Darussalam (18 Oktober 2008 ) </P>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="controls">
+      <label for="slide1"></label>
+      <label for="slide2"></label>
+      <label for="slide3"></label>
+      <label for="slide4"></label>
+    </div>
+    <div id="bullets">
+      <label for="slide1"></label>
+      <label for="slide2"></label>
+      <label for="slide3"></label>
+      <label for="slide4"></label>
+    </div>
+  </div>
+
+
+</body>
+<!--footer-->
+<footer>
+	<div class="footer-content">
+    <div class="footer-section left">
+      <h2>HOTLINE</h2>
+       <p><br>AMBULANCE: 991<br>POLICE:993<br>FIRE & RESCUE<br>SEARCH & RESCUE: 998 <br> TALIAN DARUSSALAM: 123</p>
+
+    </div>
+    <div class="footer-section middle">
+        <h2>OUR SCHOOL</h2>
+      <ul>
+        <li>SCHOOL OF BUSINESS</li>
+        <li>SCHOOL OF HEALTH SCIENCE</li>
+        <li>SCHOOL OF INFORMATION AND COMMUNICATION TECHNOLOGY</li>
+        <li>SCHOOL OF SCIENCE AND 
+        ENGINEERING</li>
+      </ul>
+    </div>
+    <div class="footer-sectionright">
+      <a href="http://www.pb.edu.bn/Lists/News/NewDisplayForm.aspx?ID=45"> <img src="unnamed (1).jpg" ></a>
+    </div>
+  </div>
+   
+   <div class="footer-bottom">
+     &copy; 2020 Politeknik Brunei | All Rights Reserved
+   </div>
+</footer>
+</html>
